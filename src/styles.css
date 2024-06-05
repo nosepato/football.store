@@ -10,8 +10,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
+  background-color: #6e208d;
+  color: #fd9800;
 }
 
 .logo {
@@ -31,7 +31,10 @@ body {
   display: flex;
   overflow-x: scroll;
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: #6e208d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-item {
@@ -41,12 +44,16 @@ body {
   padding: 40px;
   text-align: center;
   font-size: 1.2em;
+  
 }
 
 .ads-section {
   padding: 20px;
-  background-color: #fff;
+  background-color: #6e208d;
   text-align: center;
+}
+.anuncios{
+  color:#fd9800
 }
 
 .ad {
@@ -57,7 +64,7 @@ body {
 
 .product-grid {
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #6e208d;
 }
 
 .filter select {
@@ -85,14 +92,34 @@ body {
   margin-bottom: 10px;
 }
 
+.produtos{
+  color:#fd9800
+}
+
 .product-name {
   font-size: 1em;
-  color: #333;
+  color: #fd9800;
 }
 
 .footer {
   padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
+  background-color: #6e208d;
+  color: #fd9800;
   text-align: center;
+}
+
+
+.custom-carousel .carousel-item-next,
+.custom-carousel .carousel-item-prev {
+  opacity: 0.5;
+}
+
+.custom-carousel .carousel-item.active {
+  opacity: 1;
+}
+
+.custom-carousel .carousel-item img {
+  width: 800px;
+  height: 400px;
+  object-fit: cover;
 }

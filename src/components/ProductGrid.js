@@ -15,7 +15,7 @@ function ProductGrid() {
 
   return (
     <div className="product-grid">
-      <h2>Produtos</h2>
+      <h2 className='produtos'>Produtos</h2>
       <div className="filter">
         <select onChange={(e) => setCategory(e.target.value)} value={category}>
           <option value="Todos">Todos</option>

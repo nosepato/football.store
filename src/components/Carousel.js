@@ -1,14 +1,13 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../'
-import camisadoreal from '../images/camisadoreal.jpg'
-import camisadoreal2 from '../images/camisadoreal2.jpg'
-import camisadoreal3 from '../images/camisadoreal3.jpg'
+import camisadoreal from '../images/camisadoreal.jpg';
+import camisadoreal2 from '../images/camisadoreal2.jpg';
+import camisadoreal3 from '../images/camisadoreal3.jpg';
 
 const App = () => {
   return (
-    <div className="carousel">
+    <div className="carousel-container">
       <Carousel
         interval={null}
         indicators={false}
@@ -17,21 +16,21 @@ const App = () => {
       >
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block custom-carousel-img"
             src={camisadoreal}
-            alt="Camisa do Re"
+            alt="First slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block custom-carousel-img"
             src={camisadoreal2}
             alt="Second slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block custom-carousel-img"
             src={camisadoreal3}
             alt="Third slide"
           />

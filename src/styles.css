@@ -10,7 +10,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #6e208d;
+  background-color: black;
   color: #fd9800;
 }
 
@@ -29,7 +29,7 @@ body {
 
 .ads-section {
   padding: 20px;
-  background-color: #6e208d;
+  background-color: black;
   text-align: center;
 }
 .anuncios{
@@ -44,7 +44,7 @@ body {
 
 .product-grid {
   padding: 20px;
-  background-color: #6e208d;
+  background-color: black;
 }
 
 .filter select {
@@ -73,17 +73,17 @@ body {
 }
 
 .produtos{
-  color:#fd9800
+  color: white;
 }
 
 .product-name {
   font-size: 1em;
-  color: #fd9800;
+  color: black;
 }
 
 .footer {
   padding: 10px 20px;
-  background-color: #6e208d;
+  background-color: black;
   color: #fd9800;
   text-align: center;
 }

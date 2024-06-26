@@ -5,6 +5,7 @@ import AdsSection from './components/AdsSection';
 import ProductGrid from './components/ProductGrid';
 import Footer from './components/Footer';
 
+
 function App() {
   return (
     <div>

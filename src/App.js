@@ -4,6 +4,7 @@ import Carousel from './components/Carousel';
 import AdsSection from './components/AdsSection';
 import ProductGrid from './components/ProductGrid';
 import Footer from './components/Footer';
+import ProductPage from './components/ProductPage';
 
 
 function App() {
@@ -14,7 +15,13 @@ function App() {
       <AdsSection />
       <ProductGrid />
       <Footer />
+
+    <div>
+      <ProductPage />
     </div>
+
+    </div>
+
   );
 }
 

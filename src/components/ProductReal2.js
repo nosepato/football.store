@@ -2,48 +2,48 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Importa os estilos do carrossel
 
-const ProductPage = () => {
+const ProductReal2 = () => {
   return (
     <div className="product-page-container">
       <div className="product-images">
         <Carousel>
           <div>
             <img
-              src="/camisadoreal1.jpg"
+              src="/camisadoreal2.jpg"
               alt="Camisa Torcedor Real Madrid"
             />
           </div>
           <div>
             <img
-              src="/camisadorealcostas.jpg"
+              src="/camisadoreal2costas.jpg"
               alt="Camisa Torcedor Real Madrid Costas"
             />
           </div>
 
           <div>
             <img
-              src="/camisadorealhalamadrid.jpg"
+              src="/camisadoreal2detail.jpg"
               alt="Camisa Torcedor Real Madrid Detail"
             />
           </div>
 
           <div>
             <img
-              src="/camisadorealgola.jpg"
+              src="/camisadoreal2gola.jpg"
               alt="Camisa Torcedor Real Madrid Gola"              
             />
           </div>
         </Carousel>
       </div>
       <div className="product-details">
-        <h1 className="product-title">Camisa Torcedor Real Madrid I 2023/24 Masculina</h1>
+        <h1 className="product-title">Camisa Torcedor Real Madrid II 2023/24 Masculina</h1>
         <div className="product-price">
           <span className="price-new">R$ 199,99</span>
           <span className="price-old">R$ 249,99</span>
         </div>
         <div className="product-description">
           <p>
-            Vista a Camisa do Real Madrid e garanta o estilo de um verdadeiro madridista dentro e fora dos estádios.
+            Vista a Camisa do Real Madrid e garanta o estilo de um verdadeiro Madridista dentro e fora dos estádios.
             Feita para os torcedores demonstrarem o orgulho pelo clube.
           </p>
         </div>
@@ -69,4 +69,4 @@ const ProductPage = () => {
   );
 };
 
-export default ProductPage;
+export default ProductReal2;

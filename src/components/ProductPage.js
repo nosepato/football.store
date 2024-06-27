@@ -1,13 +1,39 @@
 import React from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Importa os estilos do carrossel
 
 const ProductPage = () => {
   return (
     <div className="product-page-container">
       <div className="product-images">
-        <img
-          src="/camisadoreal1.jpg" // URL da imagem principal
-          alt="Camisa Torcedor Real Madrid"
-        />
+        <Carousel>
+          <div>
+            <img
+              src="/camisadoreal1.jpg"
+              alt="Camisa Torcedor Real Madrid"
+            />
+          </div>
+          <div>
+            <img
+              src="/camisadorealcostas.jpg"
+              alt="Camisa Torcedor Real Madrid Costas"
+            />
+          </div>
+
+          <div>
+            <img
+              src="/camisadorealhalamadrid.jpg"
+              alt="Camisa Torcedor Real Madrid Detail"
+            />
+          </div>
+
+          <div>
+            <img
+              src="/camisadorealgola.jpg"
+              alt="Camisa Torcedor Real Madrid Gola"              
+            />
+          </div>
+        </Carousel>
       </div>
       <div className="product-details">
         <h1 className="product-title">Camisa Torcedor Real Madrid I 2023/24 Masculina</h1>
@@ -34,7 +60,7 @@ const ProductPage = () => {
         <div className="size-chart">
           <h3>Tabela de Tamanhos</h3>
           <img
-            src="/tabela.jpg" // URL da tabela de tamanhos
+            src="/tabela.jpg"
             alt="Tabela de Tamanhos"
           />
         </div>

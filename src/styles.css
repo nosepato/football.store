@@ -164,6 +164,13 @@ body {
   transform: scale(1.05);
 }
 
+.product-price {
+  font-size: 20px;
+  margin: 13px;
+  text-align: center;
+  margin-bottom: 1px;
+}
+
 
 /* PRODUCT PAGE */
 
@@ -172,11 +179,16 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .product-images {
   flex: 1;
   text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
 }
 
 .product-images img {
@@ -187,16 +199,21 @@ body {
 .product-details {
   flex: 1;
   padding-left: 20px;
+  width: 100%;
+  max-width: 600px;
 }
 
 .product-title {
   font-size: 24px;
   margin: 0;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-.product-price {
+.product-price1 {
   font-size: 20px;
-  margin: 10px 0;
+  text-align: center;
+  margin-bottom: 1px;
 }
 
 .price-new {
@@ -212,10 +229,13 @@ body {
 
 .product-description {
   margin-bottom: 20px;
+  font-size: 16px;
+  text-align: center;
 }
 
 .product-size {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .product-size label {
@@ -240,16 +260,64 @@ body {
   margin-top: 10px;
 }
 
+.buy-button:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+.add-to-cart-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+}
+
+.add-to-cart-button:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
 .size-chart {
   margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .size-chart img {
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
-.buy-button:hover {
-  background-color: #333;
-  transform: scale(1.05);
+.product-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+
+/* Responsividade */
+@media (min-width: 768px) {
+  .product-page-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .product-images {
+    margin-right: 20px;
+  }
+
+  .product-details {
+    max-width: none;
+  }
+
+  .product-title, .product-price, .product-description, .product-size, .product-actions, .size-chart {
+    text-align: left;
+  }
 }

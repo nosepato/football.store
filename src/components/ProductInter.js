@@ -37,9 +37,9 @@ const ProductInter = () => {
       </div>
       <div className="product-details">
         <h1 className="product-title">Camisa Torcedor Inter de Milão I 2023/24 Masculina</h1>
-        <div className="product-price">
-          <span className="price-new">R$ 199,99</span>
-          <span className="price-old">R$ 249,99</span>
+        <div className="product-price1">
+          <span className="price-new">R$ 120,00</span>
+          <span className="price-old">R$ 149,99</span>
         </div>
         <div className="product-description">
           <p>
@@ -56,7 +56,10 @@ const ProductInter = () => {
             <option value="GG">GG</option>
           </select>
         </div>
-        <button className="buy-button">Comprar</button>
+        <div className="product-actions">
+          <button className="buy-button">Comprar</button>
+          <button className="add-to-cart-button">Adicionar ao Carrinho</button>
+        </div>
         <div className="size-chart">
           <h3>Tabela de Tamanhos</h3>
           <img

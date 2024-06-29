@@ -8,19 +8,23 @@ import camisadajuve from '../images/camisadajuve.jpg';
 import camisadomilan from '../images/camisadomilan.jpg';
 
 const products = [
-  { id: 1, category: 'Espanha', name: 'Real Madrid 1', image: camisadoreal1, price: 'R$120,00' },
-  { id: 2, category: 'Espanha', name: 'Real Madrid 2', image: camisadoreal2, price: 'R$120,00' },
-  { id: 3, category: 'Inglaterra', name: 'Man City 1', image: camisadocity1, price: 'R$120,00' },
-  { id: 4, category: 'Inglaterra', name: 'Man City 2', image: camisadocity2, price: 'R$120,00' },
-  { id: 5, category: 'Itália', name: 'Inter de Milão', image: camisadainter, price: 'R$120,00' },
-  { id: 6, category: 'Itália', name: 'Juventus', image: camisadajuve, price: 'R$120,00' },
-  { id: 7, category: 'Itália', name: 'Milan', image: camisadomilan, price: 'R$120,00' }
+  { id: 1, category: 'Espanha', name: 'Real Madrid 1', image: camisadoreal1, price: 'R$120,00', url: '/product/real-madrid-1' },
+  { id: 2, category: 'Espanha', name: 'Real Madrid 2', image: camisadoreal2, price: 'R$120,00', url: '/product/real-madrid-2' },
+  { id: 3, category: 'Inglaterra', name: 'Man City 1', image: camisadocity1, price: 'R$120,00', url: '/product/man-city-1' },
+  { id: 4, category: 'Inglaterra', name: 'Man City 2', image: camisadocity2, price: 'R$120,00', url: '/product/man-city-2' },
+  { id: 5, category: 'Itália', name: 'Inter de Milão', image: camisadainter, price: 'R$120,00', url: '/product/inter-milao' },
+  { id: 6, category: 'Itália', name: 'Juventus', image: camisadajuve, price: 'R$120,00', url: '/product/juventus' },
+  { id: 7, category: 'Itália', name: 'Milan', image: camisadomilan, price: 'R$120,00', url: '/product/milan' }
 ];
 
 function ProductGrid() {
   const [category, setCategory] = useState('Todos');
 
   const filteredProducts = category === 'Todos' ? products : products.filter(product => product.category === category);
+
+  const handleViewMore = (url) => {
+    window.open(url, '_blank');
+  };
 
   return (
     <div className="product-grid">
@@ -38,7 +42,7 @@ function ProductGrid() {
           <div key={product.id} className="product">
             <img src={product.image} alt={product.name} className="product-image" />
             <div className="product-name">{product.name}</div>
-            <button className="product-button">Ver Mais</button>
+            <button className="product-button" onClick={() => handleViewMore(product.url)}>Ver Mais</button>
             <div className="product-price">{product.price}</div>
           </div>
         ))}

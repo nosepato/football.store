@@ -19,14 +19,12 @@ const ProductReal1 = () => {
               alt="Camisa Torcedor Real Madrid Costas"
             />
           </div>
-
           <div>
             <img
               src="/camisadorealhalamadrid.jpg"
               alt="Camisa Torcedor Real Madrid Detail"
             />
           </div>
-
           <div>
             <img
               src="/camisadorealgola.jpg"
@@ -37,9 +35,9 @@ const ProductReal1 = () => {
       </div>
       <div className="product-details">
         <h1 className="product-title">Camisa Torcedor Real Madrid I 2023/24 Masculina</h1>
-        <div className="product-price">
-          <span className="price-new">R$ 199,99</span>
-          <span className="price-old">R$ 249,99</span>
+        <div className="product-price1">
+          <span className="price-new">R$ 120,00</span>
+          <span className="price-old">R$ 149,99</span>
         </div>
         <div className="product-description">
           <p>
@@ -56,7 +54,10 @@ const ProductReal1 = () => {
             <option value="GG">GG</option>
           </select>
         </div>
-        <button className="buy-button">Comprar</button>
+        <div className="product-actions">
+          <button className="buy-button">Comprar</button>
+          <button className="add-to-cart-button">Adicionar ao Carrinho</button>
+        </div>
         <div className="size-chart">
           <h3>Tabela de Tamanhos</h3>
           <img

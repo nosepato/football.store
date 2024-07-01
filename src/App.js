@@ -5,6 +5,7 @@ import Carousel from './components/Carousel';
 import AdsSection from './components/AdsSection';
 import ProductGrid from './components/ProductGrid';
 import Footer from './components/Footer';
+import Cart from './components/Cart';
 import ProductReal1 from './components/ProductReal1';
 import ProductReal2 from './components/ProductReal2';
 import ProductCity1 from './components/ProductCity1';
@@ -24,6 +25,7 @@ function App() {
             <AdsSection />
             <ProductGrid />
             <Footer />
+            <Cart />
           </>
         } />
         <Route path="/product/real-madrid-1" element={<ProductPage Component={ProductReal1} />} />

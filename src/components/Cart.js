@@ -100,7 +100,7 @@ const Cart = () => {
   };
 
   return (
-    <Container>
+    <Container sx={{ backgroundColor: '#cfcfcf', minHeight: '90vh' }}>
       <Typography variant="h2" gutterBottom sx={{ mt: 3, color: 'text.primary' }}>Carrinho de Compras</Typography>
       {cart.map(item => (
         <CartItem

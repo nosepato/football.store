@@ -10,7 +10,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color:black;
+  background-color:#ffffff;
 }
 
 .logo {
@@ -41,7 +41,7 @@ body {
 
 .logo {
   font-size: 1.5em;
-  color: white;
+  color: black;
 }
 
 .search-bar input {
@@ -55,11 +55,11 @@ body {
 
 .ads-section {
   padding: 20px;
-  background-color: black;
+  background-color: #cfcfcf;
   text-align: center;
 }
 .anuncios{
-  color:#fd9800
+  color: black
 }
 
 .ad {
@@ -70,7 +70,7 @@ body {
 
 .product-grid {
   padding: 20px;
-  background-color: black;
+  background-color: #cfcfcf;
 }
 
 .filter select {
@@ -99,7 +99,7 @@ body {
 }
 
 .produtos{
-  color: #fd9800;
+  color: black;
 }
 
 .product-name {
@@ -109,8 +109,8 @@ body {
 
 .footer {
   padding: 10px 20px;
-  background-color: black;
-  color: #fd9800;
+  background-color: #cfcfcf;
+  color: black;
   text-align: center;
 }
 
@@ -182,6 +182,7 @@ body {
   padding: 20px;
   flex-direction: column;
   align-items: center;
+  background-color:#cfcfcf;
 }
 
 .product-images {

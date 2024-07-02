@@ -8,9 +8,9 @@ function Header() {
         <input type="text" placeholder="Buscar produtos..." />
       </div>
       <div className="cart">
-        <button className="cart-button">
+        <a href="/cart" target="_blank" rel="noopener noreferrer" className="cart-button">
           <img src="/cart-icon.jpg" alt="Carrinho de Compras" />
-        </button>
+        </a>
       </div>
     </header>
   );

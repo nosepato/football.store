@@ -6,7 +6,6 @@ import AdsSection from './components/AdsSection';
 import ProductGrid from './components/ProductGrid';
 import Footer from './components/Footer';
 import Cart from './components/Cart';
-import Form from './components/Form';
 import ProductReal1 from './components/ProductReal1';
 import ProductReal2 from './components/ProductReal2';
 import ProductCity1 from './components/ProductCity1';
@@ -26,8 +25,6 @@ function App() {
             <AdsSection />
             <ProductGrid />
             <Footer />
-            <Cart />
-            <Form />
           </>
         } />
         <Route path="/product/real-madrid-1" element={<ProductPage Component={ProductReal1} />} />
@@ -37,6 +34,7 @@ function App() {
         <Route path="/product/juventus" element={<ProductPage Component={ProductJuve} />} />
         <Route path="/product/milan" element={<ProductPage Component={ProductMilan} />} />
         <Route path="/product/inter-milao" element={<ProductPage Component={ProductInter} />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </Router>
   );

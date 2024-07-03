@@ -1,10 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <header className="header">
       <div className="logo">
-        <img src="/logo.jpg" alt="Logotipo" className='logo-image'/>
+        <Link to="/">
+          <img src="/logo.jpg" alt="Logotipo" className='logo-image'/>
+        </Link>
       </div>
       <div className="search-bar">
         <input type="text" placeholder="Buscar produtos..." />

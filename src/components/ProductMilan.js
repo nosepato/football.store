@@ -23,7 +23,7 @@ const ProductMilan = () => {
         </Carousel>
       </div>
       <div className="product-details">
-        <h1 className="product-title">Camisa Torcedor Mialn I 2024/25 Masculina</h1>
+        <h1 className="product-title">Camisa Torcedor Milan I 2024/25 Masculina</h1>
         <div className="product-price1">
           <span className="price-new">R$ 120,00</span>
           <span className="price-old">R$ 149,99</span>

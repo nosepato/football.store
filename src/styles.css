@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .header {
@@ -39,11 +40,6 @@ body {
   height: 24px;
 }
 
-.logo {
-  font-size: 1.5em;
-  color: black;
-}
-
 .search-bar input {
   padding: 5px;
   font-size: 1em;
@@ -53,21 +49,68 @@ body {
   font-size: 1.2em;
 }
 
+/*Ads*/
 .ads-section {
   padding: 20px;
   background-color: #cfcfcf;
-  text-align: center;
-}
-.anuncios{
-  color: black
 }
 
 .ad {
-  margin: 10px 0;
-  padding: 20px;
-  background-color: #e0e0e0;
+  margin: 25px 0;
+  padding: 10px;
+  background-color: white;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  box-sizing: border-box;
 }
 
+.ad-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.ad-list li {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.ad-image {
+  width: 60px;
+  height: auto;
+}
+
+/* Media queries para ajustar o layout em telas menores */
+@media (max-width: 768px) {
+  .ad-list {
+    flex-wrap: wrap;
+  }
+
+  .ad-list li {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .ad-image {
+    width: 50px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ad-image {
+    width: 40px;
+  }
+
+  .ad-list li {
+    margin-right: 3px;
+  }
+}
+
+
+/*Grade de Produtos*/
 .product-grid {
   padding: 20px;
   background-color: #cfcfcf;
@@ -324,4 +367,8 @@ body {
   }
 }
 
-/*Cart*/
+/*Logo*/
+.logo-image {
+  width: 50px;
+  height: auto;
+}

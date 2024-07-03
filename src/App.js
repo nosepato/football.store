@@ -18,15 +18,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={
-          <>
-            <Header />
-            <Carousel />
-            <AdsSection />
-            <ProductGrid />
-            <Footer />
-          </>
-        } />
+        <Route path="/" element={<HomePage />} />
         <Route path="/product/real-madrid-1" element={<ProductPage Component={ProductReal1} />} />
         <Route path="/product/real-madrid-2" element={<ProductPage Component={ProductReal2} />} />
         <Route path="/product/man-city-1" element={<ProductPage Component={ProductCity1} />} />
@@ -34,9 +26,21 @@ function App() {
         <Route path="/product/juventus" element={<ProductPage Component={ProductJuve} />} />
         <Route path="/product/milan" element={<ProductPage Component={ProductMilan} />} />
         <Route path="/product/inter-milao" element={<ProductPage Component={ProductInter} />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route path="/cart" element={<CartPage />} />
       </Routes>
     </Router>
+  );
+}
+
+function HomePage() {
+  return (
+    <>
+      <Header />
+      <Carousel />
+      <AdsSection />
+      <ProductGrid />
+      <Footer />
+    </>
   );
 }
 
@@ -45,6 +49,15 @@ function ProductPage({ Component }) {
     <>
       <Header />
       <Component />
+    </>
+  );
+}
+
+function CartPage() {
+  return (
+    <>
+      <Header />
+      <Cart />
     </>
   );
 }

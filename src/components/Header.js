@@ -3,7 +3,9 @@ import React from 'react';
 function Header() {
   return (
     <header className="header">
-      <div className="logo">Logotipo</div>
+      <div className="logo">
+        <img src="/logo.jpg" alt="Logotipo" className='logo-image'/>
+      </div>
       <div className="search-bar">
         <input type="text" placeholder="Buscar produtos..." />
       </div>

@@ -7,7 +7,7 @@ const CartItem = ({ item, onRemove, onIncrease, onDecrease }) => (
   <Card variant="outlined" sx={{ mb: 2, bgcolor: 'background.paper', color: 'text.primary' }}>
     <CardContent>
       <Typography variant="h5">{item.name}</Typography>
-      <Typography variant="body1">Preço: ${item.price}</Typography>
+      <Typography variant="body1">Preço: R$ {item.price.toFixed(2)}</Typography>
       <Box sx={{ display: 'flex', alignItems: 'center', mt: 2 }}>
         <IconButton onClick={() => onDecrease(item.id)}>
           <Remove />
@@ -29,8 +29,8 @@ const CartItem = ({ item, onRemove, onIncrease, onDecrease }) => (
 const Cart = () => {
   const navigate = useNavigate();
   const [cart, setCart] = useState([
-    { id: 1, name: 'Produto 1', price: 100, quantity: 1 },
-    { id: 2, name: 'Produto 2', price: 200, quantity: 1 }
+    { id: 1, name: 'Camisa Torcedor Real Madrid I 2023/24 Masculina', price: 120, quantity: 1 },
+    { id: 2, name: 'Camisa Torcedor Real Madrid II 2023/24 Masculina', price: 120, quantity: 1 }
   ]);
 
   const [checkout, setCheckout] = useState(false);
@@ -100,8 +100,8 @@ const Cart = () => {
   };
 
   return (
-    <Container sx={{ backgroundColor: '#cfcfcf', minHeight: '90vh' }}>
-      <Typography variant="h2" gutterBottom sx={{ mt: 3, color: 'text.primary' }}>Carrinho de Compras</Typography>
+    <Container sx={{ backgroundColor: '#cfcfcf', minHeight: '70vh' }}>
+      <Typography variant="h2" gutterBottom sx={{ mt: 3, color: 'text.primary', fontSize: '3rem', fontWeight: 'normal' }}>Finalizar pedido</Typography>
       {cart.map(item => (
         <CartItem
           key={item.id}
@@ -112,7 +112,7 @@ const Cart = () => {
         />
       ))}
       <Typography variant="h5" sx={{ mt: 2, color: 'text.primary' }}>
-        Valor Total: ${total}
+        Valor Total: R$ {total.toFixed(2)}
       </Typography>
       <Grid container spacing={2} sx={{ mt: 2 }}>
         <Grid item>

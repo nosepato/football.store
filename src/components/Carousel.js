@@ -15,7 +15,7 @@ const App = () => {
   return (
     <div className="carousel-container">
       <Carousel
-        interval={2000} // Alterado para mudar automaticamente a cada 2 segundos (2000ms)
+        interval={2000}
         indicators={false}
         controls={true}
         className="custom-carousel"
